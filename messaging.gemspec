@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/trappist/messaging"
   s.summary     = "Generic messaging for Rails apps"
   s.description = "Generic messaging for Rails apps. Send and receive messages among users."
+  s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
