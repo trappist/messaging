@@ -8,6 +8,6 @@ class Receipt < ActiveRecord::Base
   scope :inbox,  -> { where(:trash  => false) }
   scope :read,   -> { where(:read   => true)  }
   scope :unread, -> { where(:unread => true)  }
-  scope :to      -> (receiver)  { where(:recipient_id => receiver.id) }
-  scope :from    -> (initiator) { where(:sender_id => initiator.id) }
+  scope :to,     -> (receiver)  { where(:recipient_id => receiver.id) }
+  scope :from,   -> (initiator) { where(:sender_id => initiator.id) }
 end
